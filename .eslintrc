@@ -1,0 +1,10 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": "./node_modules/eslint-config-airbnb-base/index.js",
+  "rules": {
+    "no-console": ["error", { "allow": ["warn", "error"] }]
+  }
+}
