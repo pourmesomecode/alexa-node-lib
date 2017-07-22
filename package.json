@@ -1,0 +1,22 @@
+{
+  "name": "alexa-node-lib",
+  "version": "0.0.1",
+  "description": "Very lightweight npm module for Alexa that gives you a few easy methods to validate requests and handle intents, slots etc",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pourmesomecode/alexa-node-lib.git"
+  },
+  "author": "charles browne <hello@pourmesomecode.com> (http://pourmesomecode.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pourmesomecode/alexa-node-lib/issues"
+  },
+  "homepage": "https://github.com/pourmesomecode/alexa-node-lib#readme"
+}
