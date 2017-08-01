@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -84,20 +84,10 @@ exports.default = validation;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
-
-module.exports = require("express");
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-
-var _express = __webpack_require__(1);
-
-var _express2 = _interopRequireDefault(_express);
 
 var _validation = __webpack_require__(0);
 
@@ -105,24 +95,13 @@ var _validation2 = _interopRequireDefault(_validation);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var server = (0, _express2.default)();
-var alexaNode = {};
+var alexa = {};
 
-alexaNode.app = function (name, skillID, port) {
-  server.post('/', _validation2.default, function (req, res) {
-    console.log(res, '<<<<<');
-  });
-
-  server.listen(process.env.PORT || port, function () {
-    console.log('Server currently running on port ' + port);
-  });
+alexa.app = function (session) {
+  return 'hello';
 };
 
-alexaNode.intent = function () {};
-
-alexaNode.slot = function () {};
-
-alexaNode.response = function () {};
+module.exports = alexa;
 
 /***/ })
 /******/ ]);
