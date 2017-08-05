@@ -1,6 +1,6 @@
 {
   "name": "alexa-node-lib",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Very lightweight npm module for Alexa that gives you a few easy methods to validate requests and handle intents, slots etc",
   "main": "index.js",
   "directories": {
@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "concurrently --kill-others \"NODE_ENV=development nodemon index.js\" \"npm run build:dev\"",
+    "testDev": "concurrently --kill-others \"NODE_ENV=development nodemon server.js\" \"npm run build:dev\"",
     "build:dev": "NODE_ENV=development ./node_modules/.bin/webpack --watch --config webpack.config.js",
     "start": "NODE_ENV=production ./node_modules/.bin/webpack --config webpack.config.js && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
