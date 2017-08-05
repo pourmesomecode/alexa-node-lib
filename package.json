@@ -1,6 +1,6 @@
 {
   "name": "alexa-node-lib",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Very lightweight npm module for Alexa that gives you a few easy methods to validate requests and handle intents, slots etc",
   "main": "index.js",
   "directories": {
